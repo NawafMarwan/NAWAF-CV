@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - نواف مروان حسان محمد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: #f0f2f5;
+            padding: 30px 20px;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 30px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 50px 40px;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db 0%, #2ecc71 100%);
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 35px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.95;
+        }
+        
+        .icon {
+            font-size: 18px;
+        }
+        
+        .content {
+            padding: 45px 50px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            min-width: 200px;
+        }
+        
+        .objective {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.9;
+            text-align: justify;
+            font-weight: 400;
+        }
+        
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            border-right: 4px solid #3498db;
+        }
+        
+        .education-title {
+            font-weight: 700;
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .education-details {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+        
+        .grade {
+            color: #2ecc71;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .skill-item {
+            color: #555;
+            font-size: 15px;
+            padding-right: 25px;
+            position: relative;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        .skill-item:before {
+            content: "●";
+            position: absolute;
+            right: 0;
+            color: #3498db;
+            font-size: 16px;
+            top: 2px;
+        }
+        
+        .skill-category {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        
+        .skill-list {
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .course-item {
+            margin-bottom: 20px;
+        }
+        
+        .course-source {
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .course-list {
+            margin-right: 25px;
+            color: #555;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        
+        .course-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-right: 20px;
+        }
+        
+        .course-list li:before {
+            content: "○";
+            position: absolute;
+            right: 0;
+            color: #3498db;
+            font-size: 14px;
+        }
+        
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .language-item {
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-right: 4px solid #3498db;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        
+        .language-name {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .language-level {
+            color: #666;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .info-list {
+            list-style: none;
+        }
+        
+        .info-list li {
+            padding: 10px 0;
+            padding-right: 25px;
+            position: relative;
+            color: #555;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        
+        .info-list li:before {
+            content: "●";
+            position: absolute;
+            right: 0;
+            color: #3498db;
+            font-size: 16px;
+            top: 12px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            
+            .header {
+                padding: 40px 30px;
+            }
+            
+            .content {
+                padding: 35px 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 25px;
+            }
+            
+            .header {
+                padding: 35px 25px;
+            }
+            
+            .contact-info {
+                gap: 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>نواف مروان حسان محمد</h1>
+            <div class="contact-info">
+                <span><span class="icon">📍</span> الرياض، المملكة العربية السعودية</span>
+                <span><span class="icon">📱</span> 0509915766</span>
+                <span><span class="icon">✉️</span> nawafmarwan88@gmail.com</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">الهدف الوظيفي</h2>
+                <p class="objective">
+                    خريج ثانوية عامة حديث بمعدل امتياز، أسعى للحصول على فرصة عمل كمدخل بيانات أو مساعد إداري في بيئة عمل احترافية تتيح لي تطبيق مهاراتي التقنية في برامج الحاسب الآلي وتطوير خبراتي العملية، مع الالتزام بالدقة والجودة في إنجاز المهام المطلوبة.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">المؤهل العلمي</h2>
+                <div class="education-item">
+                    <div class="education-title">الثانوية العامة</div>
+                    <div class="education-details">المملكة العربية السعودية</div>
+                    <div class="education-details">سنة التخرج: 2025م</div>
+                    <div class="grade">المعدل التراكمي: 97.35% (امتياز)</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">المهارات التقنية</h2>
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-category">أنظمة التشغيل:</div>
+                        <div class="skill-list">
+                            <div class="skill-item">إجادة جيدة لنظام Windows</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="skill-category">برامج Microsoft Office 365:</div>
+                        <div class="skill-list">
+                            <div class="skill-item">Microsoft Excel: مهارات متقدمة (إدخال البيانات، إنشاء الجداول، استخدام المعادلات الأساسية والمتقدمة، لوحات التحكم)</div>
+                            <div class="skill-item">Microsoft Word: إجادة كاملة (إعداد المستندات، التنسيق، الجداول)</div>
+                            <div class="skill-item">Microsoft PowerPoint: مهارات جيدة في إعداد العروض التقديمية</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="skill-category">مهارات إضافية:</div>
+                        <div class="skill-list">
+                            <div class="skill-item">إدخال البيانات: سرعة ودقة عالية في الطباعة وإدخال البيانات</div>
+                            <div class="skill-item">المعرفة الأساسية: HTML و CSS (معرفة أولية)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">المهارات الشخصية</h2>
+                <ul class="info-list">
+                    <li>الدقة في إدخال البيانات ومراجعتها</li>
+                    <li>الالتزام بالمواعيد المحددة</li>
+                    <li>القدرة على التعلم واكتساب مهارات جديدة</li>
+                    <li>العمل بشكل مستقل أو ضمن فريق</li>
+                    <li>تنظيم المهام وترتيب الأولويات</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">الدورات التدريبية</h2>
+                <div class="course-item">
+                    <div class="course-source">منصة سطر:</div>
+                    <ul class="course-list">
+                        <li>دورة تدريبية في بناء هيكل مواقع الويب (HTML, CSS) - 85 ساعة تدريبية</li>
+                    </ul>
+                </div>
+                
+                <div class="course-item">
+                    <div class="course-source">منصة إدراك:</div>
+                    <ul class="course-list">
+                        <li>أساسيات الحاسوب</li>
+                        <li>مهارات متقدمة في Excel</li>
+                        <li>مهارات متقدمة في Excel 2</li>
+                        <li>لوحة التحكم باستخدام Excel</li>
+                        <li>أساسيات خدمة العملاء - التعامل مع الزبائن</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">اللغات</h2>
+                <div class="languages">
+                    <div class="language-item">
+                        <div class="language-name">العربية</div>
+                        <div class="language-level">اللغة الأم (ممتاز)</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">الإنجليزية</div>
+                        <div class="language-level">مستوى أساسي - A2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">معلومات إضافية</h2>
+                <ul class="info-list">
+                    <li>جاهز للعمل الفوري</li>
+                    <li>مهتم بمجال التقنية وإدارة البيانات</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
