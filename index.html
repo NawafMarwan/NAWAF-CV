@@ -32,14 +32,8 @@
         }
         
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         .header {
@@ -63,14 +57,8 @@
         }
         
         @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 0.5;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 0.3;
-            }
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.3; }
         }
         
         .header h1 {
@@ -99,17 +87,11 @@
             gap: 8px;
         }
         
-        .contact-item i {
-            font-size: 1.1em;
-        }
+        .contact-item i { font-size: 1.1em; }
         
-        .content {
-            padding: 40px;
-        }
+        .content { padding: 40px; }
         
-        .section {
-            margin-bottom: 35px;
-        }
+        .section { margin-bottom: 35px; }
         
         .section-title {
             color: #1e3c72;
@@ -136,13 +118,9 @@
             transition: width 0.3s ease;
         }
         
-        .section:hover .section-title:after {
-            width: 100%;
-        }
+        .section:hover .section-title:after { width: 100%; }
         
-        .section-title i {
-            font-size: 1.2em;
-        }
+        .section-title i { font-size: 1.2em; }
         
         .objective {
             line-height: 1.9;
@@ -151,9 +129,7 @@
             font-size: 1.05em;
         }
         
-        .education-item {
-            margin-bottom: 15px;
-        }
+        .education-item { margin-bottom: 15px; }
         
         .education-header {
             display: flex;
@@ -162,27 +138,10 @@
             margin-bottom: 8px;
         }
         
-        .degree {
-            font-weight: 600;
-            font-size: 1.15em;
-            color: #1e3c72;
-        }
-        
-        .year {
-            color: #666;
-            font-weight: 600;
-        }
-        
-        .location {
-            color: #666;
-            margin-bottom: 5px;
-        }
-        
-        .gpa {
-            color: #2a5298;
-            font-weight: 600;
-            font-size: 1.05em;
-        }
+        .degree { font-weight: 600; font-size: 1.15em; color: #1e3c72; }
+        .year { color: #666; font-weight: 600; }
+        .location { color: #666; margin-bottom: 5px; }
+        .gpa { color: #2a5298; font-weight: 600; font-size: 1.05em; }
         
         .skills-grid {
             display: grid;
@@ -209,18 +168,14 @@
         .skill-category:before {
             content: "";
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; right: 0;
+            width: 100%; height: 100%;
             background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
         
-        .skill-category:hover:before {
-            opacity: 1;
-        }
+        .skill-category:hover:before { opacity: 1; }
         
         .skill-category h3 {
             color: #1e3c72;
@@ -230,11 +185,7 @@
             z-index: 1;
         }
         
-        .skill-category ul {
-            list-style: none;
-            position: relative;
-            z-index: 1;
-        }
+        .skill-category ul { list-style: none; position: relative; z-index: 1; }
         
         .skill-category li {
             padding: 6px 0;
@@ -248,6 +199,17 @@
             content: "▪";
             color: #2a5298;
             font-size: 1.2em;
+        }
+
+        /* Badge for skill level */
+        .skill-badge {
+            font-size: 0.75em;
+            background: linear-gradient(135deg, #2a5298, #667eea);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-right: auto;
+            white-space: nowrap;
         }
         
         .soft-skills {
@@ -275,15 +237,6 @@
             color: white;
         }
         
-        .soft-skill-item:hover:before {
-            background: white;
-        }
-        
-        .soft-skill-item i {
-            color: #2a5298;
-            font-size: 1.1em;
-        }
-        
         .soft-skill-item:before {
             content: "";
             width: 8px;
@@ -293,10 +246,7 @@
             flex-shrink: 0;
         }
         
-        .course-list {
-            display: grid;
-            gap: 12px;
-        }
+        .course-list { display: grid; gap: 12px; }
         
         .course-item {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -312,16 +262,8 @@
             border-right-color: #667eea;
         }
         
-        .course-platform {
-            color: #1e3c72;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .course-name {
-            color: #333;
-            padding-right: 15px;
-        }
+        .course-platform { color: #1e3c72; font-weight: 600; margin-bottom: 8px; }
+        .course-name { color: #333; padding-right: 15px; }
         
         .languages {
             display: grid;
@@ -347,33 +289,17 @@
         .language-item:before {
             content: "";
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; right: 0;
+            width: 100%; height: 100%;
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
         
-        .language-item:hover:before {
-            opacity: 1;
-        }
+        .language-item:hover:before { opacity: 1; }
         
-        .language-name {
-            font-weight: 600;
-            color: #1e3c72;
-            font-size: 1.15em;
-            margin-bottom: 8px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .language-level {
-            color: #666;
-            position: relative;
-            z-index: 1;
-        }
+        .language-name { font-weight: 600; color: #1e3c72; font-size: 1.15em; margin-bottom: 8px; position: relative; z-index: 1; }
+        .language-level { color: #666; position: relative; z-index: 1; }
         
         .experience-item {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -390,23 +316,10 @@
             border-right-color: #667eea;
         }
         
-        .experience-title {
-            color: #1e3c72;
-            font-weight: 600;
-            font-size: 1.1em;
-            margin-bottom: 8px;
-        }
+        .experience-title { color: #1e3c72; font-weight: 600; font-size: 1.1em; margin-bottom: 8px; }
+        .experience-org { color: #666; font-size: 0.95em; }
         
-        .experience-org {
-            color: #666;
-            font-size: 0.95em;
-        }
-        
-        .additional-info {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+        .additional-info { display: flex; flex-direction: column; gap: 12px; }
         
         .info-item {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -424,10 +337,7 @@
             box-shadow: 0 5px 15px rgba(42, 82, 152, 0.2);
         }
         
-        .info-item i {
-            color: #2a5298;
-            font-size: 1.1em;
-        }
+        .info-item i { color: #2a5298; font-size: 1.1em; }
         
         .info-item:before {
             content: "";
@@ -439,26 +349,14 @@
         }
         
         @media print {
-            body {
-                padding: 0;
-                background: white;
-            }
-            .container {
-                box-shadow: none;
-            }
+            body { padding: 0; background: white; }
+            .container { box-shadow: none; }
         }
         
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
-            }
-            .contact-info {
-                flex-direction: column;
-                gap: 12px;
-            }
-            .content {
-                padding: 25px;
-            }
+            .header h1 { font-size: 1.8em; }
+            .contact-info { flex-direction: column; gap: 12px; }
+            .content { padding: 25px; }
         }
     </style>
 </head>
@@ -477,22 +375,25 @@
                 </div>
                 <div class="contact-item">
                     <span>✉️</span>
-                    <span>nawafmarwan88@gmail.com</span>
+                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82ece3f5e3e4efe3f0f5e3ecbabac2e5efe3ebeeace1edef">[email&#160;protected]</a></span>
                 </div>
             </div>
         </div>
         
         <div class="content">
+
+            <!-- الهدف الوظيفي -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-bullseye"></i>
                     الهدف الوظيفي
                 </h2>
                 <p class="objective">
-                    أسعى للحصول على فرصة عمل في مجال إدخال البيانات أو المساندة الإدارية، في بيئة عمل تساعدني على تطوير مهاراتي المهنية. لدي قدرة جيدة على التعامل مع الحاسب وتنظيم المعلومات وإنجاز المهام بدقة واهتمام بالتفاصيل. أطمح أن أكون جزءًا من فريق عمل محترف أساهم معه في تحسين سير العمل ودعم الجهة بما أستطيعه من التزام وجدية وتعلم مستمر.
+                    خريج ثانوية بتقدير امتياز، أسعى للانضمام إلى فريق عمل احترافي في مجال إدخال البيانات أو المساندة الإدارية أو التصميم. أتمتع بمهارات تقنية متنوعة وقدرة على الإنجاز بدقة والتكيف السريع، مع رغبة حقيقية في التطور والإضافة الفعلية.
                 </p>
             </div>
-            
+
+            <!-- المؤهل العلمي -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-graduation-cap"></i>
@@ -507,7 +408,8 @@
                     <p class="gpa">المعدل التراكمي: 97.35% (امتياز)</p>
                 </div>
             </div>
-            
+
+            <!-- الخبرات -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-briefcase"></i>
@@ -522,75 +424,111 @@
                     <div class="experience-org">جمعية أفياء الشبابية</div>
                 </div>
             </div>
-            
+
+            <!-- المهارات التقنية -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-laptop-code"></i>
                     المهارات التقنية
                 </h2>
                 <div class="skills-grid">
+
                     <div class="skill-category">
-                        <h3>أنظمة التشغيل</h3>
+                        <h3>🖥️ أنظمة التشغيل والحوسبة</h3>
                         <ul>
-                            <li>إجادة جيدة لنظام Windows</li>
+                            <li>نظام Windows <span class="skill-badge">متمرس</span></li>
+                            <li>التصفح والبحث الرقمي</li>
+                            <li>إدارة الملفات والمجلدات</li>
                         </ul>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h3>Microsoft Office 365</h3>
+                        <h3>📊 Microsoft Office 365</h3>
                         <ul>
-                            <li>Excel (مهارات متقدمة)</li>
-                            <li>Word (إجادة كاملة)</li>
-                            <li>PowerPoint (مهارات جيدة)</li>
+                            <li>Excel <span class="skill-badge">متقدم</span></li>
+                            <li>Word <span class="skill-badge">إجادة كاملة</span></li>
+                            <li>PowerPoint <span class="skill-badge">جيد</span></li>
+                            <li>Outlook & Teams</li>
                         </ul>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h3>مهارات إضافية</h3>
+                        <h3>🎨 برامج التصميم الجرافيكي</h3>
                         <ul>
-                            <li>إدخال البيانات بدقة وسرعة</li>
-                            <li>HTML و CSS (معرفة أولية)</li>
+                            <li>Canva <span class="skill-badge">إجادة</span></li>
+                            <li>Adobe Express</li>
+                            <li>تصميم المنشورات والبروشورات</li>
+                            <li>تصميم العروض التقديمية المرئية</li>
                         </ul>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h3>برامج الذكاء الاصطناعي</h3>
+                        <h3>🌐 أساسيات تطوير الويب</h3>
+                        <ul>
+                            <li>HTML <span class="skill-badge">معرفة ممتازة</span></li>
+                            <li>CSS <span class="skill-badge">معرفة ممتازة</span></li>
+                            <li>بناء صفحات الويب الأساسية</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🤖 أدوات الذكاء الاصطناعي</h3>
                         <ul>
                             <li>ChatGPT</li>
-                            <li>Gemini</li>
-                            <li>Claude</li>
+                            <li>Google Gemini</li>
+                            <li>Claude (Anthropic)</li>
+                            <li>توظيف الذكاء الاصطناعي في العمل</li>
                         </ul>
                     </div>
+
+                    <div class="skill-category">
+                        <h3>📁 مهارات البيانات والإنتاجية</h3>
+                        <ul>
+                            <li>إدخال البيانات بدقة وسرعة</li>
+                            <li>تنظيم السجلات والأرشفة</li>
+                            <li>إعداد التقارير والملخصات</li>
+                            <li>Google Drive & Docs</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-            
+
+            <!-- أساسيات التصميم -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-palette"></i>
+                    أساسيات التصميم البصري
+                </h2>
+                <div class="soft-skills">
+                    <div class="soft-skill-item"><span>نظرية الألوان وتناسقها</span></div>
+                    <div class="soft-skill-item"><span>التصميم الجرافيكي للمحتوى الرقمي</span></div>
+                    <div class="soft-skill-item"><span>تصميم المنشورات والإنفوجرافيك</span></div>
+                    <div class="soft-skill-item"><span>مبادئ الطباعة والخطوط</span></div>
+                    <div class="soft-skill-item"><span>تصميم الهوية البصرية الأساسية</span></div>
+                    <div class="soft-skill-item"><span>التصميم للمنصات الرقمية والتواصل الاجتماعي</span></div>
+                </div>
+            </div>
+
+            <!-- المهارات الشخصية -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-user-check"></i>
                     المهارات الشخصية
                 </h2>
                 <div class="soft-skills">
-                    <div class="soft-skill-item">
-                        <span>الدقة في العمل</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <span>الالتزام بالمواعيد</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <span>التعلم المستمر</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <span>العمل الجماعي</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <span>تنظيم المهام</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <span>العمل المستقل</span>
-                    </div>
+                    <div class="soft-skill-item"><span>الدقة والاهتمام بالتفاصيل</span></div>
+                    <div class="soft-skill-item"><span>الالتزام بالمواعيد والأولويات</span></div>
+                    <div class="soft-skill-item"><span>التعلم الذاتي والمستمر</span></div>
+                    <div class="soft-skill-item"><span>روح الفريق والتعاون</span></div>
+                    <div class="soft-skill-item"><span>تنظيم المهام وإدارة الوقت</span></div>
+                    <div class="soft-skill-item"><span>الاستقلالية في الإنجاز</span></div>
+                    <div class="soft-skill-item"><span>التفكير الإبداعي وحل المشكلات</span></div>
+                    <div class="soft-skill-item"><span>التكيف مع بيئات العمل المتغيرة</span></div>
                 </div>
             </div>
-            
+
+            <!-- الدورات -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-certificate"></i>
@@ -599,23 +537,24 @@
                 <div class="course-list">
                     <div class="course-item">
                         <div class="course-platform">منصة سطر</div>
-                        <div class="course-name">دورة تدريبية في بناء هيكل مواقع الويب (HTML, CSS) - 85 ساعة تدريبية</div>
+                        <div class="course-name">بناء هيكل مواقع الويب (HTML & CSS) — 85 ساعة تدريبية</div>
                     </div>
                     <div class="course-item">
                         <div class="course-platform">منصة إدراك</div>
-                        <div class="course-name">أساسيات الحاسوب</div>
+                        <div class="course-name">أساسيات الحاسوب والتقنية الرقمية</div>
                     </div>
                     <div class="course-item">
                         <div class="course-platform">منصة إدراك</div>
                         <div class="course-name">مهارات متقدمة في Excel</div>
                     </div>
                     <div class="course-item">
-                        <div class="course-platform">دورات إضافية</div>
+                        <div class="course-platform">دورات تطوير مهني</div>
                         <div class="course-name">حل المشكلات واتخاذ القرار</div>
                     </div>
                 </div>
             </div>
-            
+
+            <!-- اللغات -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-language"></i>
@@ -624,29 +563,28 @@
                 <div class="languages">
                     <div class="language-item">
                         <div class="language-name">العربية</div>
-                        <div class="language-level">اللغة الأم (ممتاز)</div>
+                        <div class="language-level">اللغة الأم — ممتاز</div>
                     </div>
                     <div class="language-item">
                         <div class="language-name">الإنجليزية</div>
-                        <div class="language-level">مستوى أساسي - A2</div>
+                        <div class="language-level">مستوى أساسي — A2</div>
                     </div>
                 </div>
             </div>
-            
+
+            <!-- معلومات إضافية -->
             <div class="section">
                 <h2 class="section-title">
                     <i class="fas fa-info-circle"></i>
                     معلومات إضافية
                 </h2>
                 <div class="additional-info">
-                    <div class="info-item">
-                        <span>جاهز للعمل الفوري</span>
-                    </div>
-                    <div class="info-item">
-                        <span>مهتم بمجال التقنية وإدارة البيانات</span>
-                    </div>
+                    <div class="info-item"><span>متاح للعمل الفوري</span></div>
+                    <div class="info-item"><span>شغوف بمجال التقنية والتصميم وإدارة البيانات</span></div>
+                    <div class="info-item"><span>حريص على التطور المهني ومواكبة متطلبات سوق العمل</span></div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
