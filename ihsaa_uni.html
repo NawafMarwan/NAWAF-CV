@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص الشامل - الوحدة الأولى: المناهج الإحصائية</title>
+    <style>
+        :root {
+            --primary-color: #1b3a5c;
+            --secondary-color: #1d9e75;
+            --accent-color: #378add;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.15rem;
+            margin-top: 15px;
+        }
+
+        ul, ol {
+            padding-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        .formula-box {
+            background-color: #eef6fc;
+            border-right: 4px solid var(--accent-color);
+            padding: 12px 15px;
+            margin: 12px 0;
+            font-family: 'Courier New', Courier, monospace;
+            direction: ltr;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .note-box {
+            background-color: #e8f5e9;
+            border-right: 4px solid var(--secondary-color);
+            padding: 12px 15px;
+            margin: 12px 0;
+        }
+
+        @media print {
+            body { background-color: white; padding: 0; }
+            section { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>دليل المذاكرة الشامل: الوحدة الأولى</h1>
+        <p class="subtitle">المناهج الإحصائية - المفاهيم، العينات، العرض البياني، والتطبيقات</p>
+    </header>
+
+    <!-- القسم الأول -->
+    <section>
+        <h2>1. المفاهيم الأساسية ومقاييس المتغيرات</h2>
+        <p><strong>المتغير الإحصائي:</strong> خاصية قابلة للتغير والتفاوت بين مفردات المجتمع الإحصائي من مشاهدة لأخرى.</p>
+        
+        <h3>تصنيف المتغيرات الإحصائية:</h3>
+        <ul>
+            <li>
+                <strong>متغيرات نوعية (وصفية):</strong> تعبر عن صفات غير رقمية.
+                <ul>
+                    <li><strong>اسمية (Nominal):</strong> لا يمكن ترتيب درجاتها منطقياً (مثل: نوع العمل، الحالة الاجتماعية، جنسية الفرد).</li>
+                    <li><strong>ترتيبية (Ordinal):</strong> يمكن ترتيب فئاتها تصاعدياً أو تنازلياً (مثل: مستوى الدخل، الحالة التعليمية، تقدير الطالب).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>متغيرات كمية:</strong> تعبر عن أعداد أو مقادير رقمية.
+                <ul>
+                    <li><strong>منفصلة (متقطعة - Discrete):</strong> تأخذ قيماً صحيحة محددة النوى (مثل: عدد الحوادث اليومية، عدد أفراد الأسرة).</li>
+                    <li><strong>متصلة (مستمرة - Continuous):</strong> تأخذ أي قيمة داخل مدى معين وتتضمن كسوراً، وتقاس بمقياس نسبي (مثل: الوزن، الدخل السنوي، الطول).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- القسم الثاني -->
+    <section>
+        <h2>2. طرق جمع البيانات وتصميم العينات</h2>
+        
+        <h3>أساليب جمع البيانات الميدانية:</h3>
+        <ol>
+            <li><strong>أسلوب الحصر الشامل:</strong> جمع البيانات من كافة مفردات المجتمع بدون استثناء.
+                <br><em>العيوب:</em> ارتفاع التكلفة، استغراق وقت وجهد كبيرين، وعدم ملاءمته لحالات الفحص المدمر (مثل فحص دم المريض أو جودة المنتجات).
+            </li>
+            <li><strong>أسلوب مسح العينة:</strong> دراسة جزء ممثل للمجتمع الإحصائي لاستنقاط الخصائص العامة.
+                <br><em>التعليم والمميزات:</em> انخفاض التكاليف، سرعة الحصول على النتائج، دقة الإشراف، وتجنب إتلاف المفردات.
+            </li>
+        </ol>
+
+        <h3>تصنيف العينات:</h3>
+        <ul>
+            <li><strong>عينات احتمالية (عشوائية):</strong> كفالة فرص متساوية لكل مفردة للاختيار.
+                <ul>
+                    <li><strong>عشوائية بسيطة:</strong> تستخدم في المجتمعات المتجانسة مع توفر إطار كامل.</li>
+                    <li><strong>منتظمة:</strong> اختيار المفردات وفق مسافة معاينة ثابتة.</li>
+                    <li><strong>طبقية:</strong> تُقسم المجتمع إلى طبقات متجانسة داخلياً وتُسحب عينة من كل طبقة تناسب حجمها.</li>
+                    <li><strong>عنقودية:</strong> تُقسم المجتمع إلى مجموعات متباينة داخلياً وتُسحب أجزاء كاملة بدون الحاجة لإطار معاينة شامل للمجتمع.</li>
+                </ul>
+            </li>
+            <li><strong>عينات غير احتمالية (تحكمية):</strong> تخضع للتقدير الشخصي والمعايير المحددة من قبل الباحث.</li>
+        </ul>
+    </section>
+
+    <!-- القسم الثالث -->
+    <section>
+        <h2>3. التبويب والعرض البياني للبيانات</h2>
+        
+        <h3>أولاً: أساليب العرض التوضيحي</h3>
+        <ul>
+            <li><strong>العرض الجدولي:</strong> تنظيم البيانات المقاسة في جداول تكرارية أحادية أو مركبة.</li>
+            <li><strong>العرض البياني:</strong> تحويل الأرقام إلى أشكال هندسية لتسهيل المقارنة المباشرة.</li>
+        </ul>
+
+        <h3>ثانياً: اختيار الشكل البياني المناسب</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>نوع البيانات / الظاهرة</th>
+                    <th>طريقة العرض البياني المناسبة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>نوعية أو كمية منقطعة (ظاهرة واحدة عبر الزمن)</td>
+                    <td>أعمدة بيانية أحادية / مستطيلات أفقية</td>
+                </tr>
+                <tr>
+                    <td>مقارنة أكثر من مستوي لظاهرة واحدة</td>
+                    <td>أعمدة بيانية مركبة</td>
+                </tr>
+                <tr>
+                    <td>توزيع نسبة المكونات للكل (مثل أنواع الأشجار)</td>
+                    <td>القطاعات الدائرية (Pie Chart)</td>
+                </tr>
+                <tr>
+                    <td>بيانات كمية متصلة مبوبة في فئات</td>
+                    <td>المدرج التكراري / المضلع التكراري / المنحنى التكراري / المنحنيات المتجمعة</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- القسم الرابع -->
+    <section>
+        <h2>4. الصيغ الرياضية القوانين الحاسبة</h2>
+        
+        <p><strong>1. حجم العينة الطبقية (Proportional Allocation):</strong></p>
+        <div class="formula-box">
+            n_i = (n / N) * N_i
+        </div>
+        <p><em>حيث: n = حجم العينة الكلي، N = حجم المجتمع الكلي، N_i = حجم الطبقة i، n_i = حجم عينة الطبقة i.</em></p>
+
+        <p><strong>2. المدى الإجمالي (Range):</strong></p>
+        <div class="formula-box">
+            R = Max_Value - Min_Value
+        </div>
+
+        <p><strong>3. مركز الفئة (Class Midpoint):</strong></p>
+        <div class="formula-box">
+            X_i = (Lower_Bound + Upper_Bound) / 2
+        </div>
+
+        <p><strong>4. طول الفئة للبيانات المنفصلة (Class Interval Width):</strong></p>
+        <div class="formula-box">
+            S = Upper_Nominal_Limit - Lower_Nominal_Limit + 1
+        </div>
+    </section>
+
+    <!-- القسم الخامس -->
+    <section>
+        <h2>5. تطبيقات ونماذج محلولة للمذاكرة</h2>
+
+        <h3>تطبيق (1): حسابات العينة الطبقية</h3>
+        <div class="note-box">
+            <strong>مسألة:</strong> مجتمع إحصائي مكون من 16,000 طالب موزعين كالتالي: (لغة إنجليزية: 9,000، لغة فرنسية: 6,000، لغات أخرى: 1,000). المطلوب سحب عينة طبقية حجمها 120 طالباً.
+        </div>
+        <p><strong>خطوات الحل:</strong></p>
+        <ul>
+            <li>حجم عينة اللغة الإنجليزية: <code>(120 / 16000) * 9000 = 67.5 ≈ 68 طالباً</code></li>
+            <li>حجم عينة اللغة الفرنسية: <code>(120 / 16000) * 6000 = 45 طالباً</code></li>
+            <li>حجم عينة اللغات الأخرى: <code>(120 / 16000) * 1000 = 7.5 ≈ 7 طلاب</code></li>
+        </ul>
+
+        <h3>تطبيق (2): جدول التكرار المتجمع (الصاعد والهابط)</h3>
+        <p>بيانات توزيع 150 أسر بحسب الدخل:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>فئات الدخل</th>
+                    <th>التكرار (f)</th>
+                    <th>الحدود العليا</th>
+                    <th>تكرار متجمع صاعد</th>
+                    <th>الحدود الدنيا</th>
+                    <th>تكرار متجمع هابط</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5 - 9</td>
+                    <td>10</td>
+                    <td>أقل من 5</td>
+                    <td>0</td>
+                    <td>أكبر من 5</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>9 - 13</td>
+                    <td>20</td>
+                    <td>أقل من 9</td>
+                    <td>10</td>
+                    <td>أكبر من 9</td>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <td>13 - 17</td>
+                    <td>30</td>
+                    <td>أقل من 13</td>
+                    <td>30</td>
+                    <td>أكبر من 13</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>17 - 25</td>
+                    <td>40</td>
+                    <td>أقل من 17</td>
+                    <td>60</td>
+                    <td>أكبر من 17</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>25 - 37</td>
+                    <td>50</td>
+                    <td>أقل من 25</td>
+                    <td>100</td>
+                    <td>أكبر من 25</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td><strong>المجموع</strong></td>
+                    <td><strong>150</strong></td>
+                    <td>أقل من 37</td>
+                    <td>150</td>
+                    <td>أكبر من 37</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+</body>
+                      </html>
+                      
